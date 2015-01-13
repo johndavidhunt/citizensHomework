@@ -81,12 +81,29 @@ nav li a {
 	text-decoration: none;
 }
 
+
+article {
+
+}
+article h2 {
+	color: #38303F;
+}
 section {
 	/*border-bottom: 1px solid #053c62;*/
 }
 section:last-of-type{
 	/*border-bottom: 0;*/
 }
+
+blockquote {
+	font-style: italic;
+	/*color: #ddeaf0;*/
+	color: #5B9BAE;
+}
+cite {
+	font-style: normal;
+}
+
 
 table {
 	padding: 8px;
@@ -221,13 +238,18 @@ a.readMoreButton:hover {
 }
 
 /****************************************************************/
+/*header.contentHeader,*/
+.contentHeader {
+	border-bottom: 1px solid #053c62;
+}
+/****************************************************************/
 .halfer {
-	width: 48%;
+	width: 43.99%;
 	float: left;
 	margin: 0 auto;	
 
 
-	padding: 12px 1%;
+	padding: 12px 3%;
 	padding-top: 0;
 
 }
@@ -294,8 +316,23 @@ nav.footerNav a {
 	
 }
 
-/***************************************************************
-/***************************************************************
-/***************************************************************
+/***************************************************************/
+#newsroompage {}
+#newsroompage .pageBannerFeature {
+	background: url(../images/newsroom.jpg) no-repeat 0 0; /* Fallback */
+	/*background-size: cover;*/
+	background-position: center;	
+}
+
+.articleFeatureList {
+	padding: 4px;
+}
+.articleFeatureList dl {
+	list-style: circle;
+}
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
 
 /*
