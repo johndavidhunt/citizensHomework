@@ -1,0 +1,301 @@
+/*styles for citizen project for HW for The Iron Yard class 2015*/
+/*by John Hunt **************************************************/
+
+
+/*CSS for layout, content, usability*/
+
+/*testing*/
+/****************************************************************/
+/*
+
+* {
+	outline: 2px dashed rgba(212, 100, 75, 0.7);
+}
+html {
+	background-color: white !important;
+}
+body {
+
+	transform: scale(0.75);
+	border: 3px solid black;
+}
+
+*/
+
+/*html elements*/
+/****************************************************************/
+
+
+html,
+body {
+	background-color: #ddeaf0;
+	padding: 0;
+	margin: 0;	
+}
+body {
+	font-family: Arial, helvetica, sans-serif;
+	padding: 24px 50px;
+	padding-top: 0;
+}
+
+h1,
+li,
+a,
+a:hover,
+a:visited {
+	color: #053c62;
+	/*color: #004078;*/
+	transition-property: background, color;
+	transition-duration: .3s;
+	transition-timing-function: ease-out;
+ 
+}
+a:hover {
+	color: #1f8fcf;
+}
+
+h2,
+h2 a {
+	color: #053c62;
+	font-size: 20px;
+}
+h4,
+h4 a,
+h4 a:visited {
+	color: #145482;
+	text-decoration: none;
+}
+h4 a:hover {
+	color: #1f8fcf;
+}
+
+nav ul {
+	list-style: none;
+	/*font-size: 0px;*/
+}
+nav li {
+	display: inline-block;
+	/*font-size: 16px;*/
+}
+nav li a {
+	text-decoration: none;
+}
+
+section {
+	/*border-bottom: 1px solid #053c62;*/
+}
+section:last-of-type{
+	/*border-bottom: 0;*/
+}
+
+table {
+	padding: 8px;
+}
+thead tr {
+	background-color: #679797;
+	color: #FFF;
+}
+tr {
+	background-color: #ddeaf0;
+}
+tr:nth-of-type(2n) {
+	background-color: transparent;
+}
+td {
+	padding: 4px 8px;
+}
+/****************************************************************/
+
+
+/* THE ALMIGHTY CLEARFIX */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+
+.scrn-rdr {
+	display: none;
+}
+
+/****************************************************************/
+header.pageHeader {	
+	padding: 8px 20px;
+}
+header.pageHeader h1{
+	margin: 0;
+	background: url(../images/citizenslogo.png) no-repeat 0 0; /* Fallback */
+	background-image: linear-gradient(transparent, transparent), url(../images/citizenslogo.svg);
+
+
+}
+header.pageHeader h1 a{
+	display: block;
+	text-indent: -9999px;
+	width: 230px;
+	height: 49px;
+}
+/****************************************************************/
+/****************************************************************/
+main.mainContainer {
+	background-color: #FBFBFC;
+	padding: 20px;
+	border-radius: 8px;
+}
+/****************************************************************/
+nav.pageNav {
+}
+nav.pageNav ul{
+	margin: 0;
+	padding: 0;
+	border: 1px solid #d7dbda;
+	/*background: #f0f4f3;*/
+	/*background: #d3dfdf;*/
+	background: rgb(240,244,243); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(240,244,243,1) 0%, rgba(211,223,223,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,244,243,1)), color-stop(100%,rgba(211,223,223,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(240,244,243,1) 0%,rgba(211,223,223,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(240,244,243,1) 0%,rgba(211,223,223,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(240,244,243,1) 0%,rgba(211,223,223,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(240,244,243,1) 0%,rgba(211,223,223,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f4f3', endColorstr='#d3dfdf',GradientType=0 ); /* IE6-9 */
+	border-radius: 4px;
+	
+}
+nav.pageNav li {
+	width: 24.99%;
+	text-align: center;
+}
+nav.pageNav a {
+	display: block;
+	padding: 12px 0;
+	vertical-align: middle;
+	font-size: 12px;
+	
+}
+nav.pageNav a:hover {
+	/*hover*/
+	/*dbe5e6*/
+	/*b1cbca*/
+	background: rgb(211,227,229); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(211,227,229,1) 0%, rgba(211,227,229,1) 22%, rgba(175,196,198,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(211,227,229,1)), color-stop(22%,rgba(211,227,229,1)), color-stop(100%,rgba(175,196,198,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(211,227,229,1) 0%,rgba(211,227,229,1) 22%,rgba(175,196,198,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(211,227,229,1) 0%,rgba(211,227,229,1) 22%,rgba(175,196,198,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(211,227,229,1) 0%,rgba(211,227,229,1) 22%,rgba(175,196,198,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(211,227,229,1) 0%,rgba(211,227,229,1) 22%,rgba(175,196,198,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3e3e5', endColorstr='#afc4c6',GradientType=0 ); /* IE6-9 */
+}
+/****************************************************************/
+.pageBannerFeature {
+	color: #fff;
+	background: #679797 url(../images/homeimage.jpg) no-repeat left center;
+	padding: 20px;
+	padding-left: 280px;
+	height: 125px;
+	border-radius: 4px;
+
+	margin-top: 20px;
+	position: relative;
+}
+a.readMoreButton {
+	color: #fff;
+	background-color: #416d6e;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;
+
+	position: absolute;
+	bottom: 14px;
+	right: 14px;
+}
+a.readMoreButton:hover {
+	color: #7fDfFf;
+}
+
+/****************************************************************/
+.halfer {
+	width: 48%;
+	float: left;
+	margin: 0 auto;	
+
+
+	padding: 12px 1%;
+	padding-top: 0;
+
+}
+
+.articleLinks{
+	background-color: #f1f1f1;
+}
+
+.articleLink {
+	
+}
+.articleLink h4{
+	margin-bottom: 0;
+}
+.articleLink h4+p{
+	margin-top: 0;
+}
+/****************************************************************/
+footer {
+	font-size: 12px;
+}
+nav.footerNav ul{
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+}
+nav.footerNav li {
+	text-align: center;
+	width: 24.99%;
+}
+nav.footerNav a {
+	display: block;
+	padding: 12px;
+	vertical-align: middle;
+	font-size: 12px;
+
+}
+/****************************************************************/
+@media (max-width: 700px) {
+  .pageBannerFeature {
+    padding: 14px;
+    background-image: none;
+  }
+}
+/****************************************************************/
+
+
+/****************************************************************/
+#homepage {}
+
+
+/****************************************************************/
+#informationcenterpage {}
+
+#informationcenterpage .pageBannerFeature {
+	background-image: none;
+	padding-left: 0;
+	text-align: center;
+}
+
+
+.highlightList {
+	background: #E0EFE7;
+	
+}
+
+/***************************************************************
+/***************************************************************
+/***************************************************************
+
+/*
