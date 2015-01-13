@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Citizens Information Center - Contact Us</title>
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-	<link rel="shortcut icon" href="favicon.ico">
-</head>
-<body class="homepage">
- <!-- 720  -->
-Create a form on the Contact Us page that collects the following information: Name, Email, Phone, Sign up for the Newsletter?, Comments. Style the form fields, labels, and submit buttons to resemble the design of the site.
-
-
-	<header class="pageHeader">
-		<h1><a href="#">Contact Us at Citizens Information Center</a></h1>
+	<head>
+		<title>Citizens Information Center - Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body id="contactuspage">
+		<!-- 720  -->
+		<header class="pageHeader">
+			<h1><a href="#">Contact Us at Citizens Information Center</a></h1>
 			
-	</header>
-	
-	<main class="mainContainer clearfix">
-			
+		</header>
+		
+		<main class="mainContainer clearfix">
+		
 		<nav class="pageNav">
 			<h3 class="scrn-rdr">Site Navigation</h3>
 			<ul><!--
@@ -26,60 +23,60 @@ Create a form on the Contact Us page that collects the following information: Na
 				--><li><a href="contactus.html">Contact Us</a></li><!--
 			--></ul>
 		</nav>
-
 		<aside class="pageBannerFeature">
-		<!-- 	<h3 class="scrn-rdr">Featured Link</h3>
-			<p class="blurb">Dedicated to bringing people together to discuss issues that are important in their communities.</p>
-			<a href="#" class="readMoreButton">Read More</a> -->
+			<h3 class="scrn-rdr">Contact Us</h3>
+			<p class="blurb">Use the form below to contact us, we are here to help you!</p>
 		</aside>
-	
+		
 		<section class="sectionBlurb">
 			<!-- <h2>Our Community</h2>
-
 			<p>Chermont is a large city located in the Northesat United States. It has a population of just under 2 million, its size being comparable to cities such as Houston. the city, positioned at a key point on a major river, is a hub for trade in the region. Chermont international Airport handles flights from all over the world, and also offers on-site convention space.</p> -->
 		</section>
-	<form>
-		<fieldset>
-			<legend>Member Information</legend>
+		<form>
+			<h2>Contact Us</h2>
+			<fieldset>
+				<legend>Contact Information</legend>
+				<div class="inputFields">
 					<label for="firstName">First Name</label>
 					<input type="text" id="firstName" name="firstName">
-					
+				</div>
+				
+				<div class="inputFields">
 					<label for="lastName">Last Name</label>
 					<input type="text" id="lastName" name="lastName">
-					
+				</div>
+				
+				<div class="inputFields">
 					<label for="email">email</label>
 					<input type="email" id="email" name="email">
-
+				</div>
+				<div class="inputFields">
 					<label for="phone">phone</label>
 					<input type="text" id="phone" name="phone">
-
+				</div>
+				<div class="inputFields">
 					<label for="comments">comments</label>
 					<textarea id="comments" name="comments"></textarea>
-
-					<label for="newsletterSignup">Signup for Newsletter?</label>
+				</div>
+				<div class="inputFields">
+					<label for="newsletterSignup">Newsletter?</label>
 					<input type="checkbox" id="newsletterSignup" name="newsletterSignup"></textarea>
-
-	
-					<input type="submit" id="submit01" name="submit01">
-
-		</fieldset>
-
-	</form>
-
-	</main>
-
-	<footer>
-		<nav class="footerNav">
-			<h3 class="scrn-rdr">Footer Links</h3>
-			<ul><!--
-				--><li><a href="#">Careers</a></li><!--
-				--><li><a href="#">Trademark and Copyright</a></li><!--
-				--><li><a href="#">Privacy Policy</a></li><!--
-				--><li><a href="#">Terms and Conditions</a></li><!--
-			--></ul>
-		</nav>
-	</footer>
-
-</body>
+				</div>
+				
+				<input type="submit" id="submitContactInfo" name="submitContactInfo">
+			</fieldset>
+		</form>
+		</main>
+		<footer>
+			<nav class="footerNav">
+				<h3 class="scrn-rdr">Footer Links</h3>
+				<ul><!--
+					--><li><a href="#">Careers</a></li><!--
+					--><li><a href="#">Trademark and Copyright</a></li><!--
+					--><li><a href="#">Privacy Policy</a></li><!--
+					--><li><a href="#">Terms and Conditions</a></li><!--
+				--></ul>
+			</nav>
+		</footer>
+	</body>
 </html>
-

@@ -332,6 +332,48 @@ nav.footerNav a {
 }
 
 /***************************************************************/
+#contactuspage {}
+#contactuspage .pageBannerFeature{
+	background-position: right center;
+	padding-right: 280px;
+	padding-left: 12px;
+
+}
+.inputFields {
+	margin: 6px;
+	vertical-align: top;
+	
+}
+.inputFields label,
+.inputFields input,
+.inputFields textarea {
+	display: inline-block;
+	vertical-align: top;
+}
+.inputFields label {
+	width: 120px;
+}
+.inputFields input,
+.inputFields textarea {
+	width: 65%;
+}
+#submitContactInfo {
+	color: #fff;
+	background-color: #416d6e;
+	background-color: rgba(0, 0, 0, 0.3);
+	
+	display: block;
+	width: 100px;
+	padding: 8px;
+	margin: 0 auto;
+	
+	font-size: 15px;
+	text-decoration: none;
+	
+	border-radius: 4px;
+}
+
+/***************************************************************/
 /***************************************************************/
 /***************************************************************/
 
